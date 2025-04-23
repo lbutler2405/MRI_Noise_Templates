@@ -8,7 +8,7 @@ Here, we provide the code with multiple functionalities to generate MRI noise te
 
 --- --- 
 
-# Command that generates a block of rician noise as a pickle file
+# Command that generates a block of rician noise as a pickle file #
     noise_generation_command="python3 $noise_py
                             --action generate
                             --nifti_file $raw_func
