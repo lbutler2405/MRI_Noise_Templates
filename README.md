@@ -2,7 +2,7 @@
 Here, we provide the code with multiple functionalities to generate MRI noise templates, with the aim of providing the research community with flexibility for future MRI research. 
 
 ### Example code to: 
-## 1) generate a block of rician noise as a pickle file (other formats are available)
+## 1) Generate a block of rician noise as a pickle file (other formats are available)
 ## 2) Convert the templates to nifti format
 ## 3) Mask out the nifti template with the mask of the participant
 
