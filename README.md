@@ -1,14 +1,14 @@
 # MRI_Noise_Templates
 Here, we provide the code with multiple functionalities to generate MRI noise templates, with the aim of providing the research community with flexibility for future MRI research. 
 
-### Example code to: 
-## 1) Generate a block of rician noise as a pickle file (other formats are available)
-## 2) Convert the templates to nifti format
-## 3) Mask out the nifti template with the mask of the participant
+## Example code to: 
+### 1) Generate a block of rician noise as a pickle file (other formats are available)
+### 2) Convert the templates to nifti format
+### 3) Mask out the nifti template with the mask of the participant
 
 --- --- 
 
-# Command that generates a block of rician noise as a pickle file #
+### Command that generates a block of rician noise as a pickle file #
     noise_generation_command="python3 $noise_py
                             --action generate
                             --nifti_file $raw_func
@@ -24,7 +24,7 @@ Here, we provide the code with multiple functionalities to generate MRI noise te
     # Run the command
     #$noise_generation_command
 
-  # Convert the templates to nifti format
+  ### Convert the templates to nifti format
     noise_conversion_command="python3 $noise_py
                             --action convert
                             --data_dir $iter_folder
@@ -38,10 +38,10 @@ Here, we provide the code with multiple functionalities to generate MRI noise te
     # Run the command
     #$noise_conversion_command
 
-  # Delete the pickle template to save space
+  ### Delete the pickle template to save space
     #rm "$iter_folder/template_${iteration}_1.pkl"
 
-  # Mask out the nifti template with the mask of the participant
+  ### Mask out the nifti template with the mask of the participant
     noise_fill_command="python $noise_py
                         --action fill
                         --data_dir $iter_folder  
